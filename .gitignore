@@ -1,0 +1,89 @@
+# ============================================================
+#  KriyaOS — .gitignore
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+
+# Eggs / dist
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# AI model files (NEVER commit these — too large)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.mlmodel
+
+# Fine-tuning — adapters and raw datasets
+finetuning/adapters/
+finetuning/dataset/
+finetuning/runs/
+finetuning/logs/
+
+# HuggingFace cache
+.cache/
+~/.cache/huggingface/
+
+# Environment / secrets
+.env
+.env.*
+*.secret
+secrets.json
+kaggle.json
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Node / Electron (Phase 5)
+node_modules/
+gui/dist/
+gui/out/
+gui/.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# SQLite databases (runtime data — not source)
+*.db
+*.sqlite
+*.sqlite3
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temp / scratch
+tmp/
+temp/
+scratch/
