@@ -12,6 +12,8 @@ from rich.console import Console
 from rich.live import Live
 from rich.text import Text
 
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
 from model_registry import ModelConfig, get_model, MODELS
 
 # ============================================================
