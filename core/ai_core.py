@@ -226,7 +226,7 @@ def stream(
                 response.raise_for_status()
 
                 if print_output:
-                    console.print(f"\n[dim][{cfg.name}][/dim]", end=" ")
+                    console.print(f"\n[dim][{role} → {cfg.name}][/dim]", end=" ")
 
                 for line in response.iter_lines():
                     if not line or line == "data: [DONE]":
